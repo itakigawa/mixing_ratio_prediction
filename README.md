@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a codebase for image-based machine learning for predicting the mixing ratios of solid chemicals.
+This is the codebase for image-based machine learning for predicting the mixing ratios of solid chemicals.
 
 ## Dataset
 
