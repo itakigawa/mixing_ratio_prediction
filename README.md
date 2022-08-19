@@ -17,7 +17,7 @@ $ mkdir zenodo_data
 $ tar Jxf mixratio_dataset_20220819.tar.xz -C zenodo_data
 ```
 
-Run all (requires CUDA 11.5 on NVIDIA GPU)
+Run all (requires CUDA 11.5, cuDNN, NVIDIA GPU)
 
 ```bash
 $ git clone https://github.com/itakigawa/mixing_ratio_prediction.git
