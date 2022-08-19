@@ -18,7 +18,7 @@ $ cd mixing_ratio_prediction
 $ cd docker
 $ . ./build_image.sh
 $ cd ..
-$ docker run --gpus all -it --rm -p 8888:8888 -v $PWD:/home/takigawa/work -v "zenodo_data_folder"/input:/home/takigawa/work/input inokuma/test bash
+$ docker run --gpus all -it --rm -v $PWD:/home/takigawa/work -v "zenodo_data_folder"/input:/home/takigawa/work/input inokuma/test bash
 $ cd work
 $ . ./script_allgen.sh
 ```
