@@ -49,9 +49,5 @@ $ . ./script_allgen.sh
 
 ## Authors
 
-- Ichigaku Takigawa (https://itakigawa.github.io/)
-- Yasuhide Inokuma
-- Yuki Ide
-
-
+Ichigaku Takigawa (https://itakigawa.github.io/)
 
