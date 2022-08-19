@@ -51,10 +51,12 @@ RUN mamba install --quiet --yes -c rdkit rdkit && \
 
 
 # user install
+#RUN pip install --upgrade pip numpy numba --ignore-installed && \
 RUN pip install --quiet --no-cache-dir --upgrade \
-    torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu115
+    torch==1.11.0+cu115 torchvision==0.12.0+cu115 torchaudio==0.11.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115
 
 RUN pip install --quiet --no-cache-dir --upgrade \
+    captum \
     tensorboard \
     nbconvert \
     nbdime \
@@ -87,4 +89,4 @@ RUN pip install --quiet --no-cache-dir \
   git+https://github.com/rwightman/pytorch-image-models.git \
   albumentations
 
-RUN pip install -U numpy
+RUN pip install -U numpy numba --ignore-installed
