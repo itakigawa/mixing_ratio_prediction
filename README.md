@@ -13,12 +13,19 @@ The corresponding image dataset is available at .
 The details will be available.
 
 ```bash
-$ test
-$ test
+$ git clone https://github.com/itakigawa/mixing_ratio_prediction.git
+$ cd mixing_ratio_prediction
+$ cd docker
+$ . ./build_image.sh
+$ cd ..
+$ docker run --gpus all -it --rm -p 8888:8888 -v $PWD:/home/takigawa/work -v "zenodo_data_folder"/input:/home/takigawa/work/input inokuma/test bash
+$ cd work
+$ . ./script_allgen.sh
 ```
 
 ## Note
 
+- docker 20.10.16
 - mamba 0.24.0
 - conda 4.13.0
 - Python 3.10.5
