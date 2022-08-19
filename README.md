@@ -22,9 +22,6 @@ Run all (requires CUDA 11.5, cuDNN, NVIDIA GPU)
 ```bash
 $ git clone https://github.com/itakigawa/mixing_ratio_prediction.git
 $ cd mixing_ratio_prediction
-$ cd docker
-$ . ./build_image.sh
-$ cd ..
 $ docker pull itakigawa/cu115_torch_timm
 $ docker run --gpus all -it --rm -v $PWD:/home/takigawa/work -v `dirname $(pwd)`/zenodo_data/input:/home/takigawa/work/input itakigawa/cu115_torch_timm bash
 $ cd work
