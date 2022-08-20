@@ -6,7 +6,7 @@ This is the codebase for image-based machine learning for predicting the mixing 
 
 ## Dataset
 
-The corresponding image dataset `mixratio_dataset_20220819.tar.xz` (1.85G) is available at figshare as [doi:10.6084/m9.figshare.20521224](https://doi.org/10.6084/m9.figshare.20521224).
+The corresponding image dataset `mixratio_dataset_20220819.tar.xz` (1.85G) is available at figshare as [doi:10.6084/m9.figshare.20521224](https://doi.org/10.6084/m9.figshare.20521224). (or at Zenodo as [doi:10.5281/zenodo.7010057](https://doi.org/10.5281/zenodo.7010057))
 
 ## How to use this?
 
