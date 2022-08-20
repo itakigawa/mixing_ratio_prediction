@@ -6,15 +6,15 @@ This is the codebase for image-based machine learning for predicting the mixing 
 
 ## Dataset
 
-The corresponding image dataset `mixratio_dataset_20220819.tar.xz` is available at Zenodo as [doi:xxxx](https://doi.org/).
+The corresponding image dataset `mixratio_dataset_20220819.tar.xz` (1.85G) is available at figshare as [doi:10.6084/m9.figshare.20521224](https://doi.org/10.6084/m9.figshare.20521224).
 
 ## How to use this?
 
 Data preparation
 
 ```bash
-$ mkdir zenodo_data
-$ tar Jxf mixratio_dataset_20220819.tar.xz -C zenodo_data
+$ mkdir data
+$ tar Jxf mixratio_dataset_20220819.tar.xz -C data
 ```
 
 Run all (requires CUDA 11.5, cuDNN, NVIDIA GPU)
@@ -23,7 +23,7 @@ Run all (requires CUDA 11.5, cuDNN, NVIDIA GPU)
 $ git clone https://github.com/itakigawa/mixing_ratio_prediction.git
 $ cd mixing_ratio_prediction
 $ docker pull itakigawa/cu115_torch_timm
-$ docker run --gpus all -it --rm -v $PWD:/home/takigawa/work -v `dirname $(pwd)`/zenodo_data/input:/home/takigawa/work/input itakigawa/cu115_torch_timm bash
+$ docker run --gpus all -it --rm -v $PWD:/home/takigawa/work -v `dirname $(pwd)`/data/input:/home/takigawa/work/input itakigawa/cu115_torch_timm bash
 $ cd work
 $ . ./script_allgen.sh
 ```
