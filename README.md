@@ -18,7 +18,7 @@ $ mkdir data
 $ tar Jxf mixratio_dataset_20220819.tar.xz -C data
 ```
 
-Run all (requires CUDA 11.5, cuDNN, NVIDIA GPU)
+Run (requires NVIDIA GPU, CUDA 11.5, cuDNN)
 
 ```bash
 $ git clone https://github.com/itakigawa/mixing_ratio_prediction.git
@@ -32,8 +32,7 @@ $ . ./script_allgen.sh
 ## Note
 
 - docker 20.10.16
-- mamba 0.24.0
-- conda 4.13.0
+- mamba 0.24.0 (conda 4.13.0)
 - Python 3.10.5
 - PyTorch 1.11.0+cu115
 - OpenCV 4.6.0
