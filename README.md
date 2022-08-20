@@ -13,6 +13,7 @@ The corresponding image dataset `mixratio_dataset_20220819.tar.xz` (1.85G) is av
 Data preparation
 
 ```bash
+$ curl -L -o mixratio_dataset_20220819.tar.xz https://figshare.com/ndownloader/files/36728997
 $ mkdir data
 $ tar Jxf mixratio_dataset_20220819.tar.xz -C data
 ```
