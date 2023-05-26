@@ -42,3 +42,24 @@ python predict.py --multirun num_tta=30 pretrain=${model_file2}/output/best_uptr
 python run.py --multirun num_tta=30 batch_size=8 warmup_epochs=50 no_validation=True pretrain=${model_file2}/output/best_uptrain.model train_dir=./input/7_A_train_ipod72ppi_200mg_sugar_salt_wt%_24pics/ test_dir=./input/7_A_test_ipod72ppi_200mg_sugar_salt_wt%_6pics/
 # result22
 python inference_speed.py --multirun num_tta=30 pretrain=${model_file2}/output/best_uptrain.model train_dir=./input/1_200mg_train_211116_sugar_salt_wt%_10%increment_random_100pics_square_x10/ test_dir=./input/1_200mg_test_211116_sugar_salt_wt%_1%increment_random_100pics_square_x10/
+# result 23
+python run.py --multirun num_tta=30 train_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_training25/ test_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_test10/
+# result 24
+python run.py --multirun num_tta=30 train_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_training50/ test_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_test10/
+# result 25
+model_file3=`python run.py --multirun num_tta=30 train_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_training75/ test_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_test10/ | grep working_dir | cut -f2 -d' ' `
+train_dir=./input/1_Heating_Reaction_train_25_50_75/MAP_PAS_110_training75/ 
+# result 26
+python predict.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/2_Heating_Reaction_110C_1_6h_5pics/test_110C_5pics_1_6h/
+# result 27
+python predict.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/2_Heating_Reaction_110C_1_6h_5pics/test2_110C_6pics/
+# result 28
+python predict_only.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/3_1_Heating_Reaction_110C_rt_13pics/ +outdim=2
+# result 29
+python predict_only.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/3_2_Heating_Reaction_110_rt_63pics/ +outdim=2
+# result 30
+python predict_only.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/3_3_Heating_Reaction_110_115_93pics/ +outdim=2
+# result 31
+python predict.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/4_various_reaction_temp_80C_100C/test1_100C_5pics_72h/
+# result 32
+python predict.py --multirun num_tta=30 pretrain=${model_file3}/output/best_uptrain.model train_dir=${train_dir} test_dir=./input/4_various_reaction_temp_80C_100C/test2_80C_5pics_120h/

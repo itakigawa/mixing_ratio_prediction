@@ -121,6 +121,32 @@ class Prediction:
     outdim: int
     names: list
 
+class ImageDataset(Dataset):
+    def __init__(
+        self, img_paths, transform=None, auto_brightness=True, grayscale=False
+    ):
+        self.transform = transform
+        self.img_paths = img_paths
+        self.auto_brightness = auto_brightness
+        self.grayscale = grayscale
+
+    def __len__(self):
+        return len(self.img_paths)
+
+    def __getitem__(self, index):
+        img_path = self.img_paths[index]
+        x = io.imread(img_path)
+        if self.grayscale:
+            x = rgb2gray(x)
+        if self.auto_brightness:
+            x = auto_brightness(x)
+        if self.transform:
+            augmented = self.transform(image=x)
+            x = augmented["image"]
+
+        return x
+
+
 
 class MyDataset(Dataset):
     def __init__(
