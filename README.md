@@ -6,16 +6,16 @@ This is the codebase for image-based machine learning for predicting the mixing 
 
 ## Dataset
 
-The corresponding image dataset `mixratio_dataset_20220819.tar.xz` (1.85G) is available at figshare as [doi:10.6084/m9.figshare.20521224](https://doi.org/10.6084/m9.figshare.20521224). (or at Zenodo as [doi:10.5281/zenodo.7010057](https://doi.org/10.5281/zenodo.7010057))
+The corresponding image dataset `mixratio_dataset_20230526.tar.xz` (2.25G) is available at figshare as [doi:10.6084/m9.figshare.20521224.v2](https://doi.org/10.6084/m9.figshare.20521224.v2).
 
 ## How to use this?
 
 Data preparation
 
 ```bash
-$ curl -L -o mixratio_dataset_20220819.tar.xz https://figshare.com/ndownloader/files/36728997
+$ curl -L -o mixratio_dataset_20230526.tar.xz https://figshare.com/ndownloader/files/40911584
 $ mkdir data
-$ tar Jxf mixratio_dataset_20220819.tar.xz -C data
+$ tar Jxf mixratio_dataset_20230526.tar.xz -C data
 ```
 
 Run (requires NVIDIA GPU, CUDA 11.5, cuDNN)
