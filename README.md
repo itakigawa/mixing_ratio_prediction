@@ -6,7 +6,7 @@ This is the codebase for image-based machine learning for predicting the mixing 
 
 ## Paper
 
-**Machine Learning-Based Analysis of Molar and Enantiomeric Ratios and Reaction Yields Using Images of Solid Mixtures*  
+**Machine Learning-Based Analysis of Molar and Enantiomeric Ratios and Reaction Yields Using Images of Solid Mixtures**  
 Yuki Ide, Hayato Shirakura, Taichi Sano, Muthuchamy Murugavel, Yuya Inaba, Sheng Hu, Ichigaku Takigawa, and Yasuhide Inokuma  
 *Industrial & Engineering Chemistry Research*, 2023 62(35), 13790-13798  
 DOI: [10.1021/acs.iecr.3c01882](https://doi.org/10.1021/acs.iecr.3c01882)
