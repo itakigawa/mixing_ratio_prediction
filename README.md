@@ -4,6 +4,26 @@
 
 This is the codebase for image-based machine learning for predicting the mixing ratios of solid chemicals.
 
+## Paper
+
+**Machine Learning-Based Analysis of Molar and Enantiomeric Ratios and Reaction Yields Using Images of Solid Mixtures*  
+Yuki Ide, Hayato Shirakura, Taichi Sano, Muthuchamy Murugavel, Yuya Inaba, Sheng Hu, Ichigaku Takigawa, and Yasuhide Inokuma  
+*Industrial & Engineering Chemistry Research*, 2023 62(35), 13790-13798  
+DOI: [10.1021/acs.iecr.3c01882](https://doi.org/10.1021/acs.iecr.3c01882)
+
+```
+@article{doi:10.1021/acs.iecr.3c01882,
+  author = {Ide, Yuki and Shirakura, Hayato and Sano, Taichi and Murugavel, Muthuchamy and Inaba, Yuya and Hu, Sheng and Takigawa, Ichigaku and Inokuma, Yasuhide},
+  title = {Machine Learning-Based Analysis of Molar and Enantiomeric Ratios and Reaction Yields Using Images of Solid Mixtures},
+  journal = {Industrial ¥& Engineering Chemistry Research},
+  volume = {62},
+  number = {35},
+  pages = {13790-13798},
+  year = {2023},
+  doi = {10.1021/acs.iecr.3c01882},
+}
+```
+
 ## Dataset
 
 The corresponding image dataset `mixratio_dataset_20230526.tar.xz` (2.25G) is available at figshare as [doi:10.6084/m9.figshare.20521224.v2](https://doi.org/10.6084/m9.figshare.20521224.v2).
